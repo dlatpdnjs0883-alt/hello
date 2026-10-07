@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>임세원 | 자기소개</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: #102a43;
+      color: white;
+      padding: 70px 20px;
+    }
+
+    .hero-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero-text .tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.13);
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 21px;
+      font-weight: 400;
+      color: #d9e7f5;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 580px;
+      color: #e8eef5;
+      font-size: 17px;
+    }
+
+    .profile-shape {
+      width: 210px;
+      height: 210px;
+      min-width: 210px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 8px solid rgba(255, 255, 255, 0.18);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 90px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px 70px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      color: #102a43;
+      margin-bottom: 24px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-bottom: 50px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e8edf3;
+    }
+
+    .card .icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      color: #6b7785;
+      margin-bottom: 5px;
+    }
+
+    .card p {
+      font-size: 20px;
+      font-weight: 700;
+      color: #102a43;
+    }
+
+    .likes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 50px;
+    }
+
+    .like-item {
+      background: white;
+      border-radius: 18px;
+      text-align: center;
+      padding: 30px 15px;
+      border: 1px solid #e8edf3;
+      transition: transform 0.2s ease;
+    }
+
+    .like-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .like-item .emoji {
+      font-size: 50px;
+      margin-bottom: 12px;
+    }
+
+    .like-item strong {
+      color: #102a43;
+      font-size: 18px;
+    }
+
+    .goal {
+      background: #102a43;
+      color: white;
+      border-radius: 20px;
+      padding: 35px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .goal::after {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      right: -40px;
+      bottom: -60px;
+    }
+
+    .goal span {
+      display: block;
+      font-size: 14px;
+      color: #bcd1e5;
+      margin-bottom: 10px;
+    }
+
+    .goal p {
+      font-size: 28px;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: #7b8794;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 50px 20px;
+      }
+
+      .hero-inner {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h2 {
+        font-size: 18px;
+      }
+
+      .profile-shape {
+        width: 160px;
+        height: 160px;
+        min-width: 160px;
+        font-size: 70px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .likes {
+        grid-template-columns: 1fr;
+      }
+
+      .goal p {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-text">
+        <span class="tag">BUSINESS · MARKETING</span>
+
+        <h1>안녕하세요,<br>임세원입니다.</h1>
+
+        <h2>경영학과 4학년 · 마케팅에 관심이 있습니다.</h2>
+
+        <p>
+          사람과 브랜드가 만나는 과정에 관심이 많습니다.
+          제가 좋아하는 것들을 즐기면서도 새로운 경험을 쌓고,
+          앞으로의 진로를 만들어가고 있습니다.
+        </p>
+      </div>
+
+      <div class="profile-shape">
+        👨‍💼
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="info-grid">
+
+        <div class="card">
+          <div class="icon">👤</div>
+          <h3>이름</h3>
+          <p>임세원</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🎓</div>
+          <h3>소속</h3>
+          <p>경영학과 4학년</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>관심 분야</h3>
+          <p>마케팅</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💡</div>
+          <h3>키워드</h3>
+          <p>경영 · 브랜드 · 마케팅</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">What I Like</h2>
+
+      <div class="likes">
+
+        <div class="like-item">
+          <div class="emoji">⚾</div>
+          <strong>야구보기</strong>
+        </div>
+
+        <div class="like-item">
+          <div class="emoji">🎬</div>
+          <strong>영화</strong>
+        </div>
+
+        <div class="like-item">
+          <div class="emoji">🏋️</div>
+          <strong>운동</strong>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="goal">
+      <span>MY GOAL</span>
+      <p>“내년에 쉬었음 청년이 되지 말자!”</p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 임세원 · Personal Introduction Page
+  </footer>
+
+</body>
+</html>
